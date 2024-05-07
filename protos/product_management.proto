@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-package product_management;
+package product_management;// Package name for the service definition
 
+// Service definition for the product management service
 service ProductService {
     // Unary RPC for getting product details
     rpc GetProductDetails(GetProductDetailsRequest) returns (ProductDetailsResponse);
@@ -14,40 +15,41 @@ service ProductService {
 
     // Bidirectional streaming RPC for updating product inventory
     rpc UpdateProductInventory(stream UpdateProductInventoryRequest) returns (stream UpdateProductInventoryResponse);
-}
+}// End of service definition for the product management service
 
+// Message definitions for the product management service
 message Product {
-    string id = 1;
-    string name = 2;
-    float price = 3;
-    int32 quantity = 4;
-}
+    string id = 1;// Unique ID of the product
+    string name = 2;// Name of the product
+    float price = 3;// Price of the product
+    int32 quantity = 4;// Quantity of the product in stock
+}// End of message definition for the product
 
 message GetProductDetailsRequest {
-    string product_id = 1;
-}
+    string product_id = 1;// ID of the product for which details are requested
+}// End of message definition for the get product details request
 
 message ProductDetailsResponse {
-    Product product = 1;
-}
+    Product product = 1;// Product details for the requested product
+}// End of message definition for the product details response
 
 message ListAllProductsRequest {
     // No request parameters needed for listing all products
-}
+}// End of message definition for the list all products request
 
 message AddProductRequest {
-    Product product = 1;
-}
+    Product product = 1;// Product to be added to the inventory
+}// End of message definition for the add product request
 
 message AddProductResponse {
-    bool success = 1;
-}
+    bool success = 1;// Indicates if the product was successfully added
+}// End of message definition for the add product response
 
 message UpdateProductInventoryRequest {
-    string product_id = 1;
-    int32 quantity_change = 2;
-}
+    string product_id = 1;// ID of the product to update inventory for
+    int32 quantity_change = 2;// Quantity to add or remove from the inventory
+}// End of message definition for the update product inventory request
 
 message UpdateProductInventoryResponse {
-    bool success = 1;
-}
+    bool success = 1;// Indicates if the inventory update was successful
+}//
