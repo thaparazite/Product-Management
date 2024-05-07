@@ -29,7 +29,7 @@ This note indicates that the dependencies are already installed and advises user
 If you encounter any issues or have questions about the project, feel free to open an issue on GitHub or reach out to the project maintainer via email x22195092@student.ncirl.ie.
 
 ## Project Maintenance and Contributors:
-This project is maintained and contributed to by [YourGitHubUsername](https://github.com/thaparazite). Contributions are welcome via pull requests, and all contributors are encouraged to follow the project's contribution guidelines outlined in the CONTRIBUTING.md file.
+This project is maintained and contributed to by [Flaviu Vanca](https://github.com/thaparazite). Contributions are welcome via pull requests, and all contributors are encouraged to follow the project's contribution guidelines outlined in the CONTRIBUTING.md file.
 
 ## License:
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
