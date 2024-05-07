@@ -52,4 +52,4 @@ message UpdateProductInventoryRequest {
 
 message UpdateProductInventoryResponse {
     bool success = 1;// Indicates if the inventory update was successful
-}//
+}// End of message definition for the update product inventory response
